@@ -1,0 +1,5 @@
+your_number = input('Enter any value:')
+print('your_number:', your_number)
+print('type(your_number):', type(your_number))
+your_number = float(your_number)
+print('type(your_number):', type(your_number))
