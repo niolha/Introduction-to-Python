@@ -71,19 +71,25 @@ for numbers in my_numbers:
 print(result)
 
 ###7###################################################
+# my_str = "My looong string My long string9ghf"
+# l_limit = "o"
+# r_limit = "g"
+# start_index = 0
+# for index in range(len(my_str)):
+#     if my_str[index] == l_limit:
+#         start_index = index + 1
+#         break
+# end_index = 0
+# for index in range(len(my_str)):
+#     if my_str[index] == r_limit:
+#         end_index = index
+# sub_str = my_str[start_index:end_index]
+# print(sub_str)
+
 my_str = "My looong string My long string9ghf"
-l_limit = "o"
-r_limit = "g"
-start_index = 0
-for index in range(len(my_str)):
-    if my_str[index] == l_limit:
-        start_index = index + 1
-        break
-end_index = 0
-for index in range(len(my_str)):
-    if my_str[index] == r_limit:
-        end_index = index
-sub_str = my_str[start_index:end_index]
+l_limit = my_str.find('o')
+r_limit = my_str.rfind('g')
+sub_str = my_str[l_limit:r_limit]
 print(sub_str)
 
 ###8###################################################
